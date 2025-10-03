@@ -1,9 +1,12 @@
+import { RevealOnScroll } from "../RevealOnScroll";
+
 export const Projects = () => {
     return (
         <section
         id="projects"
         className="min-h-screen flex items-center justify-center py-20"
         >
+          <RevealOnScroll>
             <div className="max-w-5xl mx-auto px-4">
                 <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
                     Featured Projects
@@ -47,7 +50,7 @@ export const Projects = () => {
             >
               <h3 className="text-xl font-bold mb-2">Portfolio website</h3>
               <p className="text-gray-400 mb-4">
-                React portfolio website featuring dynamic loading screens, responsive navigation, and interactive animations. Built with component-based architecture using React hooks and Tailwind CSS for optimal performance and user experience
+                React portfolio website featuring dynamic loading screens, responsive navigation, and interactive animations. Built with component-based architecture using React hooks and Tailwind CSS for optimal performance and user experience.
               </p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {["React", "Tailwind CSS", "JavaScript", "HTML5","CSS3"].map((tech, key) => (
@@ -154,6 +157,7 @@ export const Projects = () => {
             </div>
           </div>
             </div>
+            </RevealOnScroll>
         </section>
     )
 }
